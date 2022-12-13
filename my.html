@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>net163</title>
+    <!-- <link rel="shortcut icon" type="image/png" sizes="32x32" href="/pic/favicon-32x32.png"> -->
+    <!-- head 中 -->
+    <link rel="stylesheet" href="./swiper-7.4.1/swiper-7.4.1/swiper/swiper-bundle.min.css" />
+    <script src="./swiper-7.4.1/swiper-7.4.1/swiper/swiper-bundle.min.js"></script>
+    <!-- 引入swiper -->
+    <link rel="stylesheet" href="./lib/weui.min.css" />
+    <link rel="stylesheet" href="./lib/jquery-weui.min.css" />
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/jquery-weui.min.js"></script>
+    <script src="./lib/swiper.min.js"></script>
+    <script src="./lib/city-picker.min.js"></script>
+    <script src="./js/user.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <!-- 引入shortcut -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3162014_4deqlyefhjc.css">
+    <!-- 引入iconfont -->
+    <!-- 自己的css -->
+    <script src="./lib/jquery.1.11.1.min.js"></script>
+    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="./lib/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- 自己的js -->
+
+    <style>
+        .iconfont {
+            font-size: 18.5px;
+        }
+
+        .weui-tabbar {
+            position: fixed;
+            bottom: 0;
+        }
+
+        iframe {
+            position: fixed;
+            bottom: 0;
+            height: 53.6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 退出登录弹框 -->
+    <div class="user">
+        <div class="user_top">
+            <img id="user-pic" src="pic/人头.png">
+            <h3 id="login-username">点击登录</h3>
+            <a class="glyphicon glyphicon-menu-right" aria-hidden="true" id="close-login"></a>
+        </div>
+        <div class="user_top_logined" style="display:none">
+            <img id="user-pic" src="pic/头像.jpg">
+            <h3 id="login-username"></h3>
+            <a class="iconfont icon-tuichu"></a>
+        </div>
+    </div>
+
+    <!-- 十二宫格 -->
+    <div class="user-jiugongge">
+        <div class="weui-grids weui-grids-user">
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-wodedingdan"></span>
+                </div>
+                <p class="weui-grid__label">
+                    我的订单
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-youhuiquan"></span>
+                </div>
+                <p class="weui-grid__label">
+                    优惠券
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-lipinka"></span>
+                </div>
+                <p class="weui-grid__label">
+                    礼品卡
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-wodeshoucang"></span>
+                </div>
+                <p class="weui-grid__label">
+                    我的收藏
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-gerenzhongxinwodezuji"></span>
+                </div>
+                <p class="weui-grid__label">
+                    我的足迹
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-huiyuan"></span>
+                </div>
+                <p class="weui-grid__label">
+                    会员福利
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-dizhiguanli"></span>
+                </div>
+                <p class="weui-grid__label">
+                    地址管理
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-zhanghaoanquan"></span>
+                </div>
+                <p class="weui-grid__label">
+                    账号安全
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-lianxikefu"></span>
+                </div>
+                <p class="weui-grid__label">
+                    联系客服
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-bangzhuzhongxin"></span>
+                </div>
+                <p class="weui-grid__label">
+                    帮助中心
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user">
+                <div class="weui-grid__icon">
+                    <span class="iconfont icon-yijianfankui"></span>
+                </div>
+                <p class="weui-grid__label">
+                    意见反馈
+                </p>
+            </a>
+            <a href="" class="weui-grid js_grid js_grid_user user_blank">
+                <div class="weui-grid__icon">
+                </div>
+                <p class="weui-grid__label">
+                    &nbsp
+                </p>
+            </a>
+        </div>
+    </div>
+    <iframe src="./tobar-nav.html" style="width:100%"></iframe>
+
+
+
+
+    <!-- 弹框 -->
+    <div class="denglu black" style="display: none;">
+        <div class="denglu-content">
+            <div class="close">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true" id="glyphicon"></span>
+            </div>
+            <div class="login-user">
+                <span>用户名</span>
+                <input name="_username" type="text" placeholder="用户名">
+            </div>
+            <div class="line"></div>
+            <div class="login-pwd">
+                <span>密码</span>
+                <input name="_password" type="password" placeholder="密码">
+            </div>
+            <div class="line"></div>
+            <div class="button">
+                <button class="login-button">
+                    登录/注册
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="exit black" style="display:none">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">登出账号确认</h4>
+                </div>
+                <div class="modal-body">
+                    <p>亲亲，真的要走了吗？QAQ</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default byebye" data-dismiss="modal">拜拜啦</button>
+                    <button type="button" class="btn btn-primary rethink">再想想</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <iframe src="./tobar-nav.html" style="width:100%"></iframe>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>net163</title>
+    <!-- <link rel="shortcut icon" type="image/png" sizes="32x32" href="/pic/favicon-32x32.png"> -->
+    <!-- head 中 -->
+    <script src="./lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="./swiper-7.4.1/swiper-7.4.1/swiper/swiper-bundle.min.css" />
+    <script src="./swiper-7.4.1/swiper-7.4.1/swiper/swiper-bundle.min.js"></script>
+    <!-- 引入swiper -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./lib/weui.min.css" />
+    <link rel="stylesheet" href="./lib/jquery-weui.min.css" />
+    <link rel="stylesheet" href="./lib/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/category.css" />
+    <!-- 自己的css -->
+    <script src="./lib/jquery.1.11.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- 自己的js -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <!-- 引入shortcut -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3162014_dwhbayhtptr.css">
+    <!-- 引入iconfont -->
+    <script src="./js/category.js"></script>
+    <style>
+        .iconfont {
+            font-size: 18.5px;
+        }
+
+        .weui-tabbar {
+            position: fixed;
+            bottom: 0;
+        }
+
+        iframe {
+            position: fixed;
+            bottom: 0;
+            height: 53.6px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- loading效果 -->
+    <div id="loadDiv" style="display: none" class="weui-toast weui_loading_toast weui-toast--visible">
+        <div class="weui_loading">
+            <i class="weui-loading weui-icon_toast"></i>
+        </div>
+        <p class="weui-toast_content">加载中</p>
+    </div>
+    <!-- 顶部搜索框 -->
+    <div class="van-search">
+        <div class="van-search-content">
+            <div class="van-search-content-cell">
+                <span class="iconfont icon-sousuo"></span>
+                <input type="search" placeholder="请输入搜索关键词" disabled="disabled">
+            </div>
+        </div>
+    </div>
+    <!-- 分类页 -->
+    <div class="fenl">
+        <!-- 左边按钮 -->
+        <div class="divebar">
+            <div class="btn-group-vertical vertical-bar" role="group">
+                <button type="button" class="btn btn-default _btn1">居家</button>
+                <button type="button" class="btn btn-default _btn2">居家</button>
+                <button type="button" class="btn btn-default _btn3">居家</button>
+                <button type="button" class="btn btn-default _btn4">居家</button>
+                <button type="button" class="btn btn-default _btn5">居家</button>
+                <button type="button" class="btn btn-default _btn6">居家</button>
+                <button type="button" class="btn btn-default _btn7">居家</button>
+                <button type="button" class="btn btn-default _btn8">居家</button>
+            </div>
+        </div>
+        <!-- 右侧布局 -->
+        <ul class="right">
+            <!-- 上方图片 -->
+            <div class="image">
+                <img src="./pic/category.jpg">
+                <h5>回家，放松身心</h5>
+            </div>
+            <div class="mytitle">
+                <span></span>
+                <h3>居家</h3>
+            </div>
+            <!-- 九宫格布局 -->
+            <div class="weui-grids gezi">
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+                <a href="" class="weui-grid js_grid">
+                    <div class="weui-grid__icon">
+                        <img src="./pic/分类-九宫格.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        布艺软装
+                    </p>
+                </a>
+            </div>
+        </ul>
+    </div>
+    <iframe src="./tobar-nav.html" style="width:100%"></iframe>
+</body>
+
+</html>

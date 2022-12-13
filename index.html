@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>net163</title>
+    <!-- <link rel="shortcut icon" type="image/png" sizes="32x32" href="/pic/favicon-32x32.png"> -->
+    <!-- head 中 -->
+    <script src="./lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="./swiper-7.4.1/swiper-7.4.1/swiper/swiper-bundle.min.css" />
+    <script src="./swiper-7.4.1/swiper-7.4.1/swiper/swiper-bundle.min.js"></script>
+    <!-- 引入swiper -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./lib/weui.min.css" />
+    <link rel="stylesheet" href="./lib/jquery-weui.min.css" />
+    <link rel="stylesheet" href="./lib/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- 自己的css -->
+    <script src="./lib/jquery.1.11.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- 自己的js -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <!-- 引入shortcut -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3162014_dwhbayhtptr.css">
+    <!-- 引入iconfont -->
+    <style>
+        .iconfont {
+            font-size: 18.5px;
+        }
+
+        .weui-tabbar {
+            position: fixed;
+            bottom: 0;
+        }
+
+        iframe {
+            position: fixed;
+            bottom: 0;
+            height: 53.6px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- loading效果 -->
+    <div id="loadDiv" style="display: none" class="weui-toast weui_loading_toast weui-toast--visible">
+        <div class="weui_loading">
+            <i class="weui-loading weui-icon_toast"></i>
+        </div>
+        <p class="weui-toast_content">加载中</p>
+    </div>
+    <!-- 顶部搜索框 -->
+    <div class="van-search">
+        <div class="van-search-content">
+            <div class="van-search-content-cell">
+                <span class="iconfont icon-sousuo"></span>
+                <input type="search" placeholder="请输入搜索关键词" disabled="disabled">
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="swiper" id="lunbo">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="pic/轮播图1.jpg"></div>
+            <div class=" swiper-slide"><img src="pic/轮播图2.jpg"></div>
+            <div class="swiper-slide"><img src="pic/轮播图3.jpg"></div>
+            <div class="swiper-slide"><img src="pic/轮播图4.jpg"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script>
+        var mySwiper = new Swiper('#lunbo', {
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: true,//等同于以下设置
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        })
+        mySwiper.el.onmouseover = function () {
+            mySwiper.autoplay.stop();
+        },
+            mySwiper.el.onmouseout = function () {
+                mySwiper.autoplay.start();
+            }
+    </script>
+
+    <!-- 导航栏 -->
+    <div class="weui-grids">
+        <a href="" class="weui-grid js_grid  weui-daohang">
+            <div class="weui-grid__icon">
+                <img src="./pic/1.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+                居家
+            </p>
+        </a>
+        <a href="" class="weui-grid js_grid weui-daohang">
+            <div class="weui-grid__icon">
+                <img src="./pic/2.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+                餐厨
+            </p>
+        </a>
+        <a href="" class="weui-grid js_grid weui-daohang">
+            <div class="weui-grid__icon">
+                <img src="./pic/3.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+                配件
+            </p>
+        </a>
+        <a href="" class="weui-grid js_grid weui-daohang">
+            <div class="weui-grid__icon">
+                <img src="./pic/4.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+                饮食
+            </p>
+        </a>
+        <a href="" class="weui-grid js_grid weui-daohang">
+            <div class="weui-grid__icon">
+                <img src="./pic/5.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+                志趣
+            </p>
+        </a>
+    </div>
+    <!-- 品牌制造商直供标题 -->
+    <div class="brand-pinpai">
+        <p>品牌制造商直供</p>
+    </div>
+    <!--品牌制造商四宫格 -->
+    <ul class="brand">
+        <li>
+            <a href="#">
+                <img src="pic/品牌.jpg" alt="" width=100%>
+                <h4>
+                    TEFAL制造商
+                </h4>
+                <p>&#165 259.00 元</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="pic/品牌.jpg" alt="" width=100%>
+                <h4>
+                    TEFAL制造商
+                </h4>
+                <p>&#165 259.00 元</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="pic/品牌.jpg" alt="" width=100%>
+                <h4>
+                    TEFAL制造商
+                </h4>
+                <p>&#165 259.00 元</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="pic/品牌.jpg" alt="" width=100%>
+                <h4>
+                    TEFAL制造商
+                </h4>
+                <p>&#165 259.00 元</p>
+            </a>
+        </li>
+    </ul>
+
+    <!-- 新品首发标题 -->
+    <div class="brand-pinpai">
+        <p>周一周四·新品首发</p>
+    </div>
+    <!--新品首发四宫格 -->
+    <ul class="brandnew">
+        <li>
+            <a href="#">
+                <img src="pic/品牌.jpg" alt="" width=100%>
+                <div>
+                    蔓越莓曲奇
+                </div>
+                <section>&#165 36.00 元</section>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="pic/品牌.jpg" alt="" width=100%>
+                <div>
+                    蔓越莓曲奇
+                </div>
+                <section>&#165 36.00 元</section>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="pic/品牌.jpg" alt="" width=100%>
+                <div>
+                    蔓越莓曲奇
+                </div>
+                <section>&#165 36.00 元</section>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="pic/品牌.jpg" alt="" width=100%>
+                <div>
+                    蔓越莓曲奇
+                </div>
+                <section>&#165 36.00 元</section>
+            </a>
+        </li>
+    </ul>
+
+    <!-- 人气推荐标题 -->
+    <div class="brand-pinpai">
+        <p>人气推荐</p>
+    </div>
+    <div class="recommend">
+        <div class="recommend-content">
+            <img src="pic/品牌.jpg" alt="">
+            <p class="recommend-title">双宫茧桑蚕丝被 空调被</p>
+            <p class="recommend-jianjie">一级桑蚕丝，吸湿透气柔软</p>
+            <div>&#165 699.00 元</div>
+        </div>
+        <div class="recommend-content">
+            <img src="pic/品牌.jpg" alt="">
+            <p class="recommend-title">双宫茧桑蚕丝被 空调被</p>
+            <p class="recommend-jianjie">一级桑蚕丝，吸湿透气柔软</p>
+            <div>&#165 699.00 元</div>
+        </div>
+        <div class="recommend-content">
+            <img src="pic/品牌.jpg" alt="">
+            <p class="recommend-title">双宫茧桑蚕丝被 空调被</p>
+            <p class="recommend-jianjie">一级桑蚕丝，吸湿透气柔软</p>
+            <div>&#165 699.00 元</div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 专题精选 -->
+    <div class="brand-pinpai">
+        <p>专题精选</p>
+    </div>
+    <div class="swiper" id="jingxuan">
+        <div class="swiper-wrapper swiper-jingxuan">
+            <div class="swiper-slide jingxuan-slide"><img src="./pic/精选.jpg" alt="">
+                <h2>关爱他成长的每一个足迹 <span>&nbsp; &#165 0.00
+                        元</span></h2>
+                <p>专业运动品牌同厂，毛毛虫鞋买二送一</p>
+            </div>
+            <div class="swiper-slide  jingxuan-slide"><img src="./pic/精选.jpg" alt="">
+                <h2>关爱他成长的每一个足迹 <span>&nbsp; &#165 0.00
+                        元</span></h2>
+                <p>专业运动品牌同厂，毛毛虫鞋买二送一</p>
+            </div>
+            <div class="swiper-slide  jingxuan-slide"><img src="./pic/精选.jpg" alt="">
+                <h2>关爱他成长的每一个足迹 <span>&nbsp; &#165 0.00
+                        元</span></h2>
+                <p>专业运动品牌同厂，毛毛虫鞋买二送一</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var mySwiper2 = new Swiper('#jingxuan', {
+            slidesPerView: 1.2,
+        })
+    </script>
+
+    <!-- 分类 -->
+    <div class="category">
+        <div class="home">
+            <div class="brand-pinpai jujia-title">
+                <p>居家</p>
+            </div>
+            <ul class="product-ul">
+                <li class="jujia-li">
+                    <img src="./pic/居家.png" alt="">
+                    <h4 class="jujia-productname">日式和风懒人沙发</h4>
+                    <p class="jujia-price"> &#165 599.00 元 </p>
+                </li>
+                <li class="jujia-li">
+                    <img src="./pic/居家.png" alt="">
+                    <div class="jujia-productname">日式和风懒人沙发</div>
+                    <div class="jujia-price"> &#165 599.00 元 </div>
+                </li>
+                <li class="jujia-li">
+                    <img src="./pic/居家.png" alt="">
+                    <div class="jujia-productname">日式和风懒人沙发</div>
+                    <div class="jujia-price"> &#165 599.00 元 </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <iframe src="./tobar-nav.html" style="width:100%"></iframe>
+
+    <!-- body 最后 -->
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/jquery-weui.min.js"></script>
+    <script src="./lib/swiper.min.js"></script>
+    <script src="./lib/city-picker.min.js"></script>
+    <!-- 自己的js -->
+
+</body>
+
+</html>

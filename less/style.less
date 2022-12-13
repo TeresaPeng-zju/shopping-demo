@@ -1,0 +1,502 @@
+body {
+    background-color: rgb(239, 239, 239);
+}
+
+.iconfont {
+    font-size: 18.5px;
+
+}
+//顶部搜索框
+.van-search {
+    background-color: #FFFFFF;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .van-search-content {
+        background-color: #F7F8FA;
+        border-radius: 999px;
+        height: 34px;
+        padding: 10px;
+        margin:0 12px;
+        width: 100%;
+        .van-search-content-cell {
+            height: 24px;
+            padding: 5px 8px 13px 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 100%;
+                border: 0;
+                background-color: transparent;
+                padding: 0 0 8px 0;
+            }
+        }
+    }
+}
+
+//轮播图
+.swiper{
+    img{
+        width:100%;
+        max-height: 1014.93px;
+    }
+}
+
+//导航栏
+.weui-daohang {
+    width: 20%;
+    background-color: white;
+    .weui-grid__label {
+        font-family: "黑体";
+        color: #646566;
+    }
+}
+
+.brand-pinpai {
+    height: 50px;
+    background-color: white;
+    margin-top: 20px;
+    p{
+        text-align: center;
+        height:50px;
+        line-height: 50px;
+        font-size:20px;
+    }
+}
+
+.brand{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    li{
+        width: 49%;
+        position: relative;
+        h4{
+            position:absolute;
+            top:10px;
+            left:10px;
+            color:#333333;
+            font-size:14px;
+            font-family: "黑体";
+        }
+        p{
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            font-size:12px;
+            color: #8b0000;
+        }
+    }
+}
+
+.brandnew{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    li{
+        width: 49%;
+        position: relative;
+        div{
+            left:50%;
+            color:#333333;
+            font-size:14px;
+            font-family: "黑体";
+            text-align: center;
+        }
+        section{
+            left: 50%;
+            font-size:14px;
+            color: #8b0000;
+            text-align: center;
+        }
+    }
+}
+
+.recommend-content{
+    box-sizing: border-box;
+    padding: 8px 16px;
+    color: #323233;
+    font-size: 12px;
+    background-color: #fafafa;
+    height: 104px;
+    img{
+        width: 88px;
+        height: 88px;
+        float: left;
+    }
+    .recommend-title{
+        max-height: 32px;
+        font-weight: 500;
+        line-height: 29px;
+        font-size: 18px;
+    }
+    .recommend-jianjie{
+        height: 40px;
+        max-height: 100px;
+        line-height: 40px;
+    }
+    div{
+        line-height: 20px;
+        color: #8d0000;
+    }
+}
+ 
+
+.swiper-jingxuan{
+    background-color: white;
+    height:260px;
+    
+}
+
+
+.jingxuan-slide{
+    height:260px;
+    background-color: white;  
+        
+}
+
+#jingxuan{
+    max-height:260px!important;
+    background-color: white;  
+    img{
+        max-height:166.67px;
+        max-width: 300px;
+        overflow: hidden;
+    }
+    h2{
+        line-height: 40px;
+        font-size: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 90%;
+        font-family: "黑体";
+        span{
+            color: darkred;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 90%;
+        font-size: 14px;
+        font-family: "黑体";
+    }   
+}
+
+.swiper-slide {
+    width: 300px;
+    /*设为固定值*/
+    width: auto;
+    /*根据内容调整宽度*/
+}
+
+.jingxuan-slide{
+    margin-right: 10px;
+}
+
+.weui-home{
+    width:50%;
+}
+.category{
+    background: #fff;
+    // height:2684.31px;
+    margin-top: 18px;
+    .product-ul{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+    .jujia-li {
+        width:50%;
+        height:238px ;
+        background-color: white;
+        text-align:center;//!!!
+        img{
+            max-width:184px;
+            max-height:184px;
+        }
+        .jujia-productname {
+            font-family: "黑体";
+            font-size: 10px;
+            height:14px;
+        }
+        .jujia-price{
+            line-height:40px;
+            color: #8b0000;
+            font-family: "黑体";
+            font-size: 10px;
+            height: 40px;
+        }
+    }
+}
+}
+
+
+.weui-tabbar .weui-tabbar__label{
+    color:#333333;
+    font-size: 12px;
+    font-family: "黑体";
+}
+
+.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
+    color: rgb(139, 0, 0);
+}
+
+.weui-tabbar__item.weui-bar__item--on .iconfont{
+    color: rgb(139, 0, 0);
+}
+
+.user{
+    height:109.97px;
+    background-color: #333333;
+    .user_top{
+        background: #333;
+        padding: 20px 10px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;//居中对齐弹性盒的各项 <div> 元素
+        img{
+            border-radius: 50%;
+            margin-right: 10px;
+            height: 100%;
+        }
+        h3{
+            flex:1;//flex:1即为flex-grow:1,经常用作自适应布局,将父容器的display:flex,侧边栏大小固定后,将内容区flex:1,内容区则会自动放大占满剩余空间。
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+        }
+        a{
+            color:white;
+            margin:0 auto;
+        }
+    }  
+}
+
+#close-login{
+    display:inline;
+}
+
+
+
+.user-jiugongge{
+    height:calc(100vh - 109.97px - 46px);
+    position: relative;
+    .weui-grids-user{
+        display: flex;
+        flex-wrap: wrap;
+        height:100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .weui-grid__icon{
+            color: #333333;
+            .iconfont{
+            font-size:28px;
+            }
+        }
+        .weui-grid__label{
+            padding-top:12px;
+            color: #646566;
+            font-size: 12px;
+            line-height: 1.5;
+            word-break: break-all;
+        } 
+    }
+    .user_blank{
+        background-color: rgb(239, 239, 239);
+    }
+}
+.js_grid_user{
+    border:none !important;
+}
+.weui-grid:after {
+    content:none;
+}
+
+.weui-grid:before {
+    content:none;
+}
+
+// my
+.black{
+    position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.5);;
+        padding: 0 10px;
+    }
+    .denglu-content{
+        padding: 10px 20px 0px 20px;
+        position: relative;
+        background-color: #fff;
+        width: 100%;
+        height: 200px;
+        left: 0;
+        top: 50%;
+        transform:translateY(-50%);
+        overflow: hidden;
+        span{
+            color: #323233;
+            font-size: 14px;
+            line-height: 24px;
+            width:50px;
+        }
+        input{
+            flex: 1;
+            border:none;
+            font-size: 14px;
+        }
+        .line{
+                    width:100%;
+                    height: 1px;
+                    background-color:  #ebedf0;
+                    margin:0 auto;
+                }
+        .login-user{
+            display: flex;
+            padding: 10px 16px;     line-height: 24px;          
+        }
+        .login-pwd{
+            display: flex;
+            padding: 10px 16px;     line-height: 24px;  
+        }
+        .button{
+            display: flex;
+            box-sizing: border-box;
+            padding: 10px 16px 10px 0;
+            color: #323233;
+            font-size: 14px;
+            line-height: 24px;
+            background-color: white;
+            align-items: center;
+            margin-bottom: 0;
+            
+            button{
+                width: calc(100% - 32px);
+                text-align: center;
+                width: 100%;
+                height: 44px;
+                background-color: rgb(225, 0, 29);
+                border-radius: 999px;
+                margin: 16px 0;
+                color: white;
+                border: none;
+                box-sizing: border-box;
+                background-image:none;
+                justify-content: center;
+            
+        }
+    }
+    }
+
+    .user_top_logined{
+        background: #333;
+        padding: 20px 10px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;//居中对齐弹性盒的各项 <div> 元素
+        img{
+            border-radius: 50%;
+            margin-right: 10px;
+            height: 100%;
+        }
+        h3{
+            flex:1;//flex:1即为flex-grow:1,经常用作自适应布局,将父容器的display:flex,侧边栏大小固定后,将内容区flex:1,内容区则会自动放大占满剩余空间。
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+        }
+        a{
+            color:white;
+            margin:0 auto;
+        }
+    }
+
+
+    .black{
+        position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.5);;
+            padding: 0 10px;
+            .modal-dialog{
+                position: absolute;
+                width:90%;
+left: 0;
+top: 50%;
+right: 0;
+bottom:0;
+margin: auto;
+transform:translateY(-50%);
+h4{
+    text-align: center;
+}
+.modal-body{
+    text-align: center;
+    border: none;
+}
+            }
+        }
+        
+            
+    // .black{
+    //     position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //         width: 100%;
+    //         height: 100vh;
+    //         background-color: rgba(0,0,0,0.5);;
+    //         padding: 0 10px;
+    //     }
+    //     .exit-content{
+    //         padding: 10px 20px 0px 20px;
+    //         position: relative;
+    //         background-color: #fff;
+    //         width: 90%;
+    //         height: 200px;
+    //         left: 0;
+    //         right:0;
+    //         top: 50%;
+    //         bottom:0;
+    //         margin:auto;
+    //         transform:translateY(-50%);
+    //         overflow: hidden;
+    //         border-radius: 5px;
+    //         .exit-confirm{
+    //             color: #323233;
+    //             padding-top: 26px;
+    //             font-weight: 500;
+    //             line-height: 24px;
+    //             text-align: center;
+    //         }
+    //         .login-pwd{
+    //             padding-top: 8px;
+    //             color: #646566;
+    //             text-align: center;
+    //             font-size: 14px;
+
+    //         }
+    //         .button{
+                
+                
+                
+                
+            
+    //     }
+    //     }

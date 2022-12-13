@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\模板\\net163\\lib"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "春节大礼包"
+	}
+}
